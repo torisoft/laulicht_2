@@ -16,7 +16,7 @@ while (true) {
         strip.show()
     }
     for (let Index = 0; Index <= 7; Index++) {
-        strip.setPixelColor(7 - Index, neopixel.colors(NeoPixelColors.Violet))
+        strip.setPixelColor(7 - Index, neopixel.rgb(randint(0, 255), randint(0, 255), randint(0, 255)))
         strip.show()
         basic.pause(V)
         strip.setPixelColor(7 - Index, neopixel.colors(NeoPixelColors.Black))
